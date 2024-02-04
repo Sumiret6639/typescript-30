@@ -1,0 +1,45 @@
+#Info .banner {
+	height: 800px;
+
+	&__caption {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		width: 64%;
+		max-width: 500px;
+		margin-right: 80px;
+	}
+
+	@media (max-width: 375px) {
+		h1 {
+			margin: 0;
+			font-size: 48px;
+		}
+
+		&__caption {
+			flex-direction: column;
+		}
+	}
+}
+
+#Info .list {
+	padding-top: 120px;
+	padding-bottom: 168px;
+
+	h1 {
+		margin-bottom: 80px;
+	}
+
+	@media (max-width: 375px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		h1 {
+			margin-bottom: 40px;
+		}
+	}
+}

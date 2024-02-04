@@ -1,0 +1,26 @@
+.deco-line {
+	position: static;
+	margin-top: 32px;
+	width: 375px;
+	height: 54px;
+
+	@media screen and (min-width: 767px) {
+		opacity: 0.4;
+		right: -158px;
+		top: 192px;
+		width: 1218px;
+		height: 187px;
+		z-index: 0;
+	}
+}
+
+.register-form {
+	position: relative;
+	z-index: 2;
+	padding: 0 calc(1.5rem * 0.5);
+	width: 100%;
+
+	@media screen and (min-width: 767px) {
+		width: 416px;
+	}
+}
