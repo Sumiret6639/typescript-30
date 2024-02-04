@@ -7,6 +7,11 @@ import Divider from "../components/common/divider";
 import { useWindowSize } from "@uidotdev/usehooks";
 import logoDefault from "/logo-default.svg";
 import deco from "/deco.png";
+import ic_ArrowLeftPrimary from "/icon/ic_ArrowLeftPrimary.svg";
+import ic_ArrowRightPrimary from "/icon/ic_ArrowRightPrimary.svg";
+import ic_car from "/icon/ic_car.svg";
+import ic_train from "/icon/ic_train.svg";
+import ic_luxurycar from "/icon/ic_luxurycar.svg";
 
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -215,8 +220,8 @@ export default function Home() {
 									<h4 className="fw-bold" style={{ width: "80px", height: "1px", background: "#000" }}></h4>
 								</Button>
 								<div className="d-flex justify-content-end">
-									<img src="/icon/ic_ArrowLeftPrimary.svg" width={24} height={24} alt="" className="me-8" />
-									<img src="/icon/ic_ArrowRightPrimary.svg" width={24} height={24} alt="" />
+									<img src={ic_ArrowLeftPrimary} width={24} height={24} alt="" className="me-8" />
+									<img src={ic_ArrowRightPrimary} width={24} height={24} alt="" />
 								</div>
 							</div>
 						</div>
@@ -388,21 +393,21 @@ export default function Home() {
 
 					<div className="traffic-info-list row">
 						<div className="text-white col-12 col-md-4">
-							<img src="/icon/ic_car.svg" alt="car" className="icon mb-4" />
+							<img src={ic_car} alt="car" className="icon mb-4" />
 							<h4>自行開車</h4>
 							<p>
 								如果您選擇自行開車，可以透過國道一號下高雄交流道，往市區方向行駛，並依路標指示即可抵達「享樂酒店」。飯店內設有停車場，讓您停車方便。
 							</p>
 						</div>
 						<div className="text-white col-12 col-md-4">
-							<img src="/icon/ic_train.svg" alt="train" className="icon mb-4" />
+							<img src={ic_train} alt="train" className="icon mb-4" />
 							<h4>高鐵/火車</h4>
 							<p>
 								如果您是搭乘高鐵或火車，可於左營站下車，外頭有計程車站，搭乘計程車約20分鐘即可抵達。或者您也可以轉乘捷運紅線至中央公園站下車，步行約10分鐘便可抵達。
 							</p>
 						</div>
 						<div className="text-white col-12 col-md-4">
-							<img src="/icon/ic_luxurycar.svg" alt="pick-up" className="icon mb-4" />
+							<img src={ic_luxurycar} alt="pick-up" className="icon mb-4" />
 							<h4>禮賓車服務</h4>
 							<p>承億酒店提供禮賓專車接送服務，但因目的地遠近會有不同的收費，請撥打電話將由專人為您服務洽詢專線：(07)123-4567</p>
 						</div>

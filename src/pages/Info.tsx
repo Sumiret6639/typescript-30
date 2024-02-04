@@ -2,6 +2,9 @@ import { Carousel } from "react-bootstrap";
 import Divider from "../components/common/divider";
 import { Link } from "react-router-dom";
 import "./Info.scss";
+import logoDefault from "/logo-default.svg";
+import ic_Size from "/icon/ic_Size.svg";
+import ic_ArrowRight from "/icon/ic_ArrowRight.svg";
 
 export default function Info() {
 	return (
@@ -9,7 +12,7 @@ export default function Info() {
 			<section className="banner">
 				<div className="banner__caption">
 					<div className="banner__title">
-						<img src="/logo-default.svg" alt="nav-brand" className="mb-5" width={196} height={72} />
+						<img src={logoDefault} alt="nav-brand" className="mb-5" width={196} height={72} />
 						<Divider />
 					</div>
 					<h1 className="d-block text-white">客房旅宿</h1>
@@ -62,15 +65,15 @@ export default function Info() {
 										<p className="mb-10">享受高級的住宿體驗，尊爵雙人房提供給您舒適寬敞的空間和精緻的裝潢。</p>
 										<div className="d-flex mb-10">
 											<div className="border border-primary rounded p-4 me-4">
-												<img src="/icon/ic_Size.svg" alt="" />
+												<img src={ic_Size} alt="" />
 												<p>24 坪</p>
 											</div>
 											<div className="border border-primary rounded p-4 me-4">
-												<img src="/icon/ic_Size.svg" alt="" />
+												<img src={ic_Size} alt="" />
 												<p>24 坪</p>
 											</div>
 											<div className="border border-primary rounded p-4">
-												<img src="/icon/ic_Size.svg" alt="" />
+												<img src={ic_Size} alt="" />
 												<p>24 坪</p>
 											</div>
 										</div>
@@ -78,7 +81,7 @@ export default function Info() {
 										<div className="d-flex justify-content-between">
 											<h4 className="text-primary">NT$ 10,000</h4>
 											<Link to="detail">
-												<img src="/icon/ic_ArrowRight.svg" alt="" />
+												<img src={ic_ArrowRight} alt="" />
 											</Link>
 										</div>
 									</div>

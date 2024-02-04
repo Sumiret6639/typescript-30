@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from "../../hooks/useAppStore";
 import "../../styles/global.scss";
 import { setLogout } from "../../store/user";
+import logoWhite from "/logo-white.svg";
+import ic_menu from "/icon/ic_menu.svg";
+import ic_Profile from "/icon/ic_Profile.svg";
+import ic_FB from "/icon/FB.svg";
+import ic_IG from "/icon/IG.svg";
 
 export default function DefaultLayout({ children = null, withFooter = true }: { children?: ReactNode; withFooter?: boolean }) {
 	const isLogin = useAppSelector((state) => state.user.isLogin);
@@ -16,11 +21,11 @@ export default function DefaultLayout({ children = null, withFooter = true }: { 
 				<div className="container-fluid">
 					<Navbar.Brand href="#">
 						<Link to="/">
-							<img src="/logo-white.svg" alt="nav brand" className="d-block m-0" style={{ maxWidth: "197px" }} />
+							<img src={logoWhite} alt="nav brand" className="d-block m-0" style={{ maxWidth: "197px" }} />
 						</Link>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="offcanvasNavbar-expand-sm">
-						<img src="/icon/ic_menu.svg" alt="icon-menu" />
+						<img src={ic_menu} alt="icon-menu" />
 					</Navbar.Toggle>
 
 					{isLogin ? (
@@ -42,7 +47,7 @@ export default function DefaultLayout({ children = null, withFooter = true }: { 
 										</Link>
 									</Nav.Link>
 									<Nav.Link href="#" className="text-white text-center mb-4 mb-md-0">
-										<img src="/icon/ic_Profile.svg" alt="ic_Profile" className="me-2" />
+										<img src={ic_Profile} alt="ic_Profile" className="me-2" />
 										{name}
 									</Nav.Link>
 									<Nav.Link
@@ -107,10 +112,10 @@ export default function DefaultLayout({ children = null, withFooter = true }: { 
 					<div className="container">
 						<div className="row d-flex flex-column flex-md-row justify-content-between">
 							<div className="col-12 col-md-3">
-								<img src="/logo-white.svg" alt="footer brand" className="mb-10" width={196} height={72} />
+								<img src={logoWhite} alt="footer brand" className="mb-10" width={196} height={72} />
 								<div className="d-flex" style={{ marginBottom: "80px" }}>
-									<img src="/icon/FB.svg" alt="" className="me-4" />
-									<img src="/icon/IG.svg" alt="" />
+									<img src={ic_FB} alt="ic_FB" className="me-4" />
+									<img src={ic_IG} alt="ic_IG" />
 								</div>
 							</div>
 
