@@ -33,7 +33,7 @@ const router = createBrowserRouter(
 			],
 		},
 	],
-	{ basename: "/typescript-30/" }
+	{ basename: "/typescript-30" }
 );
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
