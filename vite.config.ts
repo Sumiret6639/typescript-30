@@ -5,7 +5,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(() => {
 	return {
 		// base: mode === "production" ? "/typescript-30/" : "/",
-		base: "/typescript-30/",
+		// base: "/typescript-30/",
+		base: ",/",
 		// publicDir: "/typescript-30/",
 		plugins: [react()],
 	};
