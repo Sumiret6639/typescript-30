@@ -6,7 +6,7 @@ export default defineConfig(() => {
 	return {
 		// base: mode === "production" ? "/typescript-30/" : "/",
 		// base: "/typescript-30/",
-		base: ",/",
+		base: "./",
 		// publicDir: "/typescript-30/",
 		plugins: [react()],
 	};
