@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Divider from "../components/common/divider";
 import { useWindowSize } from "@uidotdev/usehooks";
+import logoDefault from "/logo-default.svg";
+import deco from "/deco.png";
 
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -26,7 +28,7 @@ export default function Home() {
 					<div className="row d-flex flex-column flex-lg-row justify-content-between align-items-center">
 						<div className="col-md-4">
 							<div className="banner__title">
-								<img src="/logo-default.svg" alt="nav-brand" className="mb-5" width={196} height={72} />
+								<img src={logoDefault} alt="nav-brand" className="mb-5" width={196} height={72} />
 								<div className="banner__divider">
 									<Divider />
 								</div>
@@ -199,7 +201,7 @@ export default function Home() {
 
 				<div className="d-flex flex-column flex-md-row">
 					<div className="room-img">
-						<img src="/deco.png" alt="" className="w-100 pe-lg-10" />
+						<img src={deco} alt="" className="w-100 pe-lg-10" />
 					</div>
 
 					<div className="room-content container " style={{ zIndex: 3 }}>
